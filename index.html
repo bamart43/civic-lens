@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
-  <meta name="author" content="Bryce Martin">
-  <!-- ADD Open Graph Meta for title, description, image, url, type -->
-  <title>Civic Lens</title>
-  <meta property="og:title" content="Civic Lens"/>
-  <meta name="description" content="An independent news organization dedicated to unbiased reporting and truth-driven storytelling.">
-  <meta property="og:type" content="Article">
-  <meta property="og:image" content="content="https://civiclens.com/image.jpg"/>
-  <meta property="og:url" content="https://github.com/bamart43/civiclens/tree/main" />
-
-  <!-- ADD link to stylesheet -->
-  <link rel="stylesheet" href="styles.css">
-  <title>Civic Lens</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="Civic Lens is an independent news organization committed to unbiased reporting, investigative journalism, and truth-driven storytelling.">
+    <meta name="author" content="Bryce Martin">
+  
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="Civic Lens" />
+    <meta property="og:description" content="An independent news organization dedicated to unbiased reporting and truth-driven storytelling." />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://civiclens.com/image.jpg" />
+    <meta property="og:url" content="https://github.com/bamart43/civiclens/tree/main" />
+  
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+  
+    <title>Civic Lens</title>
+  </head>
 <body>
   <!-- ADD semantic and validated HTML -->
   <!-- ADD skip to main content -->
@@ -45,31 +47,31 @@
       </nav>
   </header> 
   <main id="main">
-    <section>
+    <section id="welcome">
       <h2>Welcome to Civic Lens</h2>
       <p>We are an independent news organization dedicated to unbiased reporting, investigative journalism, and truth-driven storytelling. At Civic Lens, our mission is to expose the facts, amplify marginalized voices, and shine light on the systems that shape our society.</p>
         <blockquote class="tagline">“We don't follow the narrative. We follow the facts.”</blockquote>
     </section> 
       
-    <section>
+    <section id="news">
       <h2>Breaking News</h2>
-        <section>
+        <section id="investigation">
           <h3>Federal Investigation Launched into Water Mismanagement in the Southwest</h3>
           <p>The Department of Justice has announced a full investigation into decades of water distribution practices affecting tribal lands and rural communities.</p>
-          <video>
-            <source src="videos/water-management.mp4" type="video/mp4">
+          <video controls>
+            <!-- <source src="videos/water-management.mp4" type="video/mp4"> -->
           </video>
         
         </section>
-        <section>
+        <section id="suppression">
           <h3>Voter Suppression Bill Faces Pushback in State Supreme Court</h3>
           <p>Civil rights advocates argue that the bill disenfranchises thousands of voters and potential voters of color and those in rural areas of the country.</p>
-          <video>
-            <source src="videos/voter-suppression.mp4" type="video/mp4">
+          <video controls>
+            <!-- <source src="videos/voter-suppression.mp4" type="video/mp4"> -->
           </video>
         </section>  
     </section>
-    <section>   
+    <section id="articles">   
       <h2>Featured Articles</h2>
         <section>
           <h3>The Cost of Silence: Whistleblower Stories from Inside Tech Giants</h3>
@@ -120,40 +122,50 @@
           <p>Rebuilding trust and infrastructure in disaster-hit communities.</p>
         </section>  
     </section> 
-    <section>
+    <section id="subscription">
       <h2>Stay Informed. Stay Empowered.</h2>
       <p>Receive text messages with the news you want to know.</p>
       <form action="post" method="https://wp.zybooks.com/form-viewer.php">
-        <label for="fullName">Name<span class="required">*</span></label>
-        <input name="fullName" id="fullName" type="text" placeholder="First Name & Last Name" required autocomplete>
-        
-        <label for="phone">Mobile<span class="required">*</span></label>
-        <input id="phone" name="phone" type="tel" placeholder="(888)123-4567" required autocomplete>
+        <div class="personalInfo">
+          <label for="fullName">Name<span class="required">*</span></label>
+          <input name="fullName" id="fullName" type="text" placeholder="First Name & Last Name" required autocomplete>
+        </div>
+        <div class="personalInfo">
+          <label for="phone">Mobile<span class="required">*</span></label>
+          <input id="phone" name="phone" type="tel" placeholder="(888)123-4567" required autocomplete>
+        </div>
         
         <fieldset>
           <legend>NOTIFICATION PREFERENCES</legend>
-        
-          <input type="checkbox" name="breaking" id="breaking" value="breaking">
-          <label for="breaking">Breaking News</label><br>
-        
-          <input type="checkbox" name="politics" id="politics" value="politics">
-          <label for="politics">Politics</label><br>
-        
-          <input type="checkbox" name="weather" id="weather" value="weather">
-          <label for="weather">Weather</label><br>
-        
-          <input type="checkbox" name="sports" id="sports" value="sports">
-          <label for="sports">Sports</label><br>
-        
-          <input type="checkbox" name="entertainment" id="entertainment" value="entertainment">
-          <label for="entertainment">Entertainment</label><br>
-        
-          <input type="checkbox" name="world" id="world" value="world">
-          <label for="world">World</label><br>
-        
-          <input type="checkbox" name="financial" id="financial" value="financial">
-          <label for="financial">Financial</label>
-        
+          <div class="fieldset">
+            <input type="checkbox" name="breaking" id="breaking" value="breaking">
+            <label for="breaking">Breaking News</label>
+          </div>
+          <div class="fieldset">
+            <input type="checkbox" name="politics" id="politics" value="politics">
+            <label for="politics">Politics</label>
+          </div>
+          <div class="fieldset">
+            <input type="checkbox" name="weather" id="weather" value="weather">
+            <label for="weather">Weather</label>
+          </div>
+          
+          <div class="fieldset">
+            <input type="checkbox" name="sports" id="sports" value="sports">
+            <label for="sports">Sports</label>
+          </div>
+          <div class="fieldset">
+            <input type="checkbox" name="entertainment" id="entertainment" value="entertainment">
+            <label for="entertainment">Entertainment</label>
+          </div>
+          <div class="fieldset">
+            <input type="checkbox" name="world" id="world" value="world">
+            <label for="world">World</label>
+          </div>
+          <div class="fieldset">
+            <input type="checkbox" name="financial" id="financial" value="financial">
+            <label for="financial">Financial</label>
+          </div>
         </fieldset>
 
         <input type="submit" id="submit" name="submit">

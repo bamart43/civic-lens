@@ -108,26 +108,46 @@ header{
 
 }
 nav{
-  background-color: var(--news-flash);
   color: var(--watchdog-white);
 }
+.menu-button{
+  background-color: var(--news-flash);
+  display:inline-block;
+  text-align: center;
+}
+.menu li a{
+  text-decoration: none;
+  background-color: var(--news-flash);
+  color: var(--watchdog-white);
+  
+}
+.menu li{
+  padding: .25rem;
+}
+
+
+
 
 
 /* ///ADD/// Global Layout Styles */
 header{
   display:grid;
   grid-template-columns: 1fr;
+  padding:1rem;
 }
 body{
   display: grid;
   grid-template-columns: 1fr;
 }
+main{
+  max-width: 1200px;
+  padding: 1rem;
+  margin:0 auto;
+}
 section{
   display: grid;
 }
-section{
-  margin:0 auto;
-}
+
 h2 section{
   background-color: var(--news-flash);
 }
@@ -144,11 +164,95 @@ h1{
 }
 h2{
   font-size: 2rem;
+  margin: 1rem 0;
 }
 h3{
   font-size: 1.5rem;
+  margin: 1rem 0;
+}
+.tagline{
+  margin: 1rem 0;
+}
+#welcome .tagline{
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+}
+#investigation, #suppression{
+  background-color: var(--news-flash);
+  padding: 16px;
+  margin: 0.5rem;
+
+}
+#articles section{
+  border: 1.5px solid var(--story-subtitle);
+  margin: 4px;
+  padding:8px;
+  box-shadow: var(--shadow);
+}
+#articles section h3{
+  border-bottom: 1px solid var(--story-subtitle);
+}
+#subscription form{
+  background-color: var(--news-flash);
+  padding:0 8px;
+  margin:8px;
+  color: var(--watchdog-white);
+}
+.personalInfo{
+  display:flex;
+  flex-direction: column;
+  margin:8px 0;
+}
+label{
+  display: block;
+  padding: 4px 0;
 }
 
+fieldset{
+  border:2px solid var(--blue-bulletin);
+  accent-color: var(--blue-bulletin);
+}
+input[type="text"], input[type="tel"]{
+  padding:.5rem;
+}
+.fieldset{
+  display:flex;
+  padding: 2px;
+}
+#submit{
+  background-color: var(--blue-bulletin);
+  color: var(--watchdog-white);
+  box-shadow: var(--shadow);
+  border-radius: 6px;
+  margin:8px 0;
+  padding:8px 0;
+  width: 100%;
+}
+footer{
+  background-color: var(--blue-bulletin);
+  color:var(--watchdog-white);
+  padding:1rem;
+}
+
+footer a{
+  text-decoration: none;
+  color:var(--watchdog-white);
+  background-color: var(--news-flash);
+  padding: 8px;
+  margin: 4px 0;
+  width: fit-content;
+  display:flexbox
+}
+.social-buttons{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+footer p{
+  padding: 8px 0;
+  text-align: center;
+}
 /* ///ADD/// medium styles 620px */
 
 
