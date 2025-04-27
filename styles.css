@@ -174,14 +174,15 @@ h1 {
 }
 h2 {
   font-size: 2rem;
-  margin: 1rem 0;
+  margin: 1rem 0 .5rem 0;
 }
 h3 {
   font-size: 1.5rem;
-  margin: 1rem 0;
+  margin: .25rem 0;
 }
 .tagline {
   margin: 1rem 0;
+  font-size: 1.25rem;
 }
 #welcome .tagline {
   font-size: 14px;
@@ -282,7 +283,6 @@ video{
   .menu {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
   }
 
   .menu li {
@@ -318,7 +318,9 @@ video{
   #submit{
     grid-column: 1/-1;
   }
-  
+  .personalInfo{
+    margin:1px;
+  }
 }
 
 /* ///ADD/// large styles 920px */
